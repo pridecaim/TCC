@@ -48,7 +48,7 @@ if (isset($_POST['logar'])) {
         <h1>Criar Conta</h1>
         <input type="text" name="nome" placeholder="Nome" required>
         <input type="email" name="email" placeholder="Email" required>
-        <input type="password" name="senha" placeholder="Senha" required>
+        <input type="password" name="senha" placeholder="Senha" minlength="8" required>
         <button name="cadastrar">Criar</button>
       </form>
     </div>
@@ -56,8 +56,8 @@ if (isset($_POST['logar'])) {
     <div class="form-container sign-in-container">
       <form method="POST">
         <h1>Login</h1><br>
-        <input type="email" name="email" placeholder="Email">
-        <input type="password" name="senha" placeholder="Senha">
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="senha" placeholder="Senha" required>
         <a href="#">Esqueceu sua senha?</a>
         <button name="logar">Entrar</button>
       </form>
