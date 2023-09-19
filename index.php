@@ -13,10 +13,7 @@ if (isset($_POST['cadastrar'])) {
 
   if ($usuario->cadastrar($nome, $email, $senha)) {
     echo "<script>alert('Cadastro realizado com sucesso!');</script>";
-  } else {
-    echo "<script>alert('Erro ao cadastrar')</script>";
   }
-  exit();
 }
 
 if (isset($_POST['logar'])) {
@@ -31,16 +28,17 @@ if (isset($_POST['logar'])) {
   }
 }
 ?>
-
-
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registro</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/logonobg.png" type="image/x-icon">
 </head>
+
 <body>
   <div class="container" id="container">
     <div class="form-container sign-up-container">
@@ -49,7 +47,7 @@ if (isset($_POST['logar'])) {
         <input type="text" name="nome" placeholder="Nome" required>
         <input type="email" name="email" placeholder="Email" required>
         <input type="password" name="senha" placeholder="Senha" minlength="8" required>
-        <button name="cadastrar">Criar</button>
+        <button name="cadastrar" id="cadastrar">Criar</button>
       </form>
     </div>
 
@@ -89,6 +87,12 @@ if (isset($_POST['logar'])) {
 
     signInButton.addEventListener('click', () => {
       container.classList.remove("right-panel-active");
+    });
+
+    const cadastrarButton = document.getElementById('cadastrar');
+
+    cadastrarButton.addEventListener('click', () => {
+      container.classList.add("right-panel-active");
     });
   </script>
 </body>

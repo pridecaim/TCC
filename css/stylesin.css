@@ -1,0 +1,33 @@
+.navbar-brand img {
+    width: 50px;
+    /* Defina o tamanho desejado */
+    height: auto;
+    /* Mantém a proporção original */
+    margin-right: 10px;
+    /* Espaço à direita do logotipo, se necessário */
+}
+
+.navbar {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-nav .nav-link {
+    text-shadow: 2px 2px 5px rgba(77, 76, 76, 0.3);
+}
+
+/* Estilizando o fundo gradiente da navbar */
+.navbar {
+    background: linear-gradient(90deg, #8918BE, #D83396, #EB5571, #FF774B);
+    /* Adicione outros estilos de sua escolha, como cor de texto e margens */
+}
+
+/* Estilizando o texto na navbar para branco */
+.navbar-nav .nav-link {
+    color: #fff; /* Define a cor do texto para branco */
+  }
+  
+  /* Estilizando o link ativo */
+  .navbar-nav .nav-link      {
+    color: #fff; /* Mantendo a cor do texto para o link ativo como branco */
+  }
+  
